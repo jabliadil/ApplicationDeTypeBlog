@@ -1,0 +1,9 @@
+<li [ngClass]="{'list-group-item':true,
+'list-group-item-success':loveItsPost>0,
+'list-group-item-danger':loveItsPost<0}" >
+    <span class="badge badge-primary">{{created_atPost|date:'short'}}</span>
+<h3>{{titlePost}}</h3>
+<p>{{contentPost}}</p>
+<button class="btn btn-success" (click)="onLoveIt()">Love it!</button>
+<button class="btn btn-danger" (click)="onDontLoveIt()">Don't love it!</button>
+</li>
